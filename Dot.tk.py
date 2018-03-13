@@ -97,3 +97,4 @@ for a in r["paid_domains"]:
         checklocation(a["tld"])
     else:
         print "{0:<40}{1:<45}{2:<15}".format(colored("No Location","blue"),PaidDomains,price)
+exit = raw_input("Press Enter To Exit")
