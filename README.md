@@ -12,6 +12,7 @@
 - Python module `lxml`
 - Python module `bs4`
 - Python module `os`
+- Python module `colorama`
 
 ### Install modules
 
