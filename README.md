@@ -1,7 +1,7 @@
 # Dot.Tk
 **A cross-platform python based utility tool that Search for Free and Paid Domains by selected keywords given by users.**
 # Author:
- <a href="https://ijazurrahim.com" target="_blank">Ijaz Ur Rahim</a>
+### <a href="https://ijazurrahim.com" target="_blank">Ijaz Ur Rahim</a>
 ### Requirements
 
 - Python (2 or 3)
