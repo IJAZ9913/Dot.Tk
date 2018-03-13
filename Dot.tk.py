@@ -7,8 +7,10 @@ _|\"\"\"\"\"| _|\"\"\"\"\"| _|\"\"\"\"\"| _|\"\"\"\"\"| _|\"\"\"\"\"| _|\"\"\"\"
 author = """    Coded by Ijaz Ur Rahim A.K.A Muhammad Ibraheem with """
 website = "https://ijazurrahim.com/"
 from termcolor import colored
+from colorama import init
 import requests,json
 from bs4 import BeautifulSoup
+init()
 import os
 if os.name == 'nt':
     os.system("cls")
