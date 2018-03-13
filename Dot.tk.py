@@ -80,7 +80,9 @@ for a in r["free_domains"]:
     FreeDomains = colored(data, 'blue')
     print(FreeDomains)
 print colored("{0:<30}{1:<35}{2:<15}".format("\nLocation","Domains","Price(USD)"),"green")
+b=0
 for a in r["paid_domains"]:
+    b = b + 1
     data = "{0}".format(a["domain"]+a["tld"])
     PaidDomains = colored(data, 'blue')
     price = a["price_int"]
@@ -92,6 +94,10 @@ for a in r["paid_domains"]:
         price = colored(price+"."+a["price_cent"],"green")
     elif int(price)>=100:
         price = colored(price+"."+a["price_cent"],"red")
+	
+    if os.name == 'nt':
+        if b == 100:
+            more = raw_input("Press Enter/Return to Extract More...")
 
     if a["location"]=="true":
         checklocation(a["tld"])
