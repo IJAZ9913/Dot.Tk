@@ -1,0 +1,6 @@
+json
+lxml
+bs4
+requests
+termcolor
+os
