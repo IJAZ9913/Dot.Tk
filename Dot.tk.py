@@ -33,7 +33,7 @@ def checklocation(location):
     for dataset in datasets:
         if "."+dataset[0][1].lower()==location:
             real_location = dataset[1][1].encode('utf-8')
-            print "{0:<40}{1:<45}{2:<15}".format(colored(real_location,"blue"),PaidDomains,price)
+            print "{0:<40}{1:<40}{2:<15}".format(colored(real_location,"blue"),PaidDomains,price)
             break
 
 
@@ -79,7 +79,7 @@ for a in r["free_domains"]:
     data = "{0:<15}{1:<30}{2:<15}{3:<10}".format(a["status"],a["domain"]+a["tld"],a["price_int"]+"."+a["price_cent"],a["type"])
     FreeDomains = colored(data, 'blue')
     print(FreeDomains)
-print colored("{0:<30}{1:<35}{2:<15}".format("\nLocation","Domains","Price(USD)"),"green")
+print colored("{0:<30}{1:<30}{2:<15}".format("\nLocation","Domains","Price(USD)"),"green")
 b=0
 for a in r["paid_domains"]:
     b = b + 1
@@ -103,7 +103,7 @@ for a in r["paid_domains"]:
         try:
             checklocation(a["tld"])
         except:
-            print "{0:<40}{1:<45}{2:<15}".format(colored("Location Error","red"),PaidDomains,price)
+            print "{0:<40}{1:<40}{2:<15}".format(colored("Location Error","red"),PaidDomains,price)
     else:
-        print "{0:<40}{1:<45}{2:<15}".format(colored("No Location","blue"),PaidDomains,price)
+        print "{0:<40}{1:<40}{2:<15}".format(colored("No Location","blue"),PaidDomains,price)
 exit = raw_input("Press Enter To Exit")
