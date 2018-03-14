@@ -94,13 +94,16 @@ for a in r["paid_domains"]:
         price = colored(price+"."+a["price_cent"],"green")
     elif int(price)>=100:
         price = colored(price+"."+a["price_cent"],"red")
-	
+    
     if os.name == 'nt':
         if b == 100:
             more = raw_input("Press Enter/Return to Extract More...")
 
     if a["location"]=="true":
-        checklocation(a["tld"])
+        try:
+            checklocation(a["tld"])
+        except:
+            print "{0:<40}{1:<45}{2:<15}".format(colored("Location Error","red"),PaidDomains,price)
     else:
         print "{0:<40}{1:<45}{2:<15}".format(colored("No Location","blue"),PaidDomains,price)
 exit = raw_input("Press Enter To Exit")
