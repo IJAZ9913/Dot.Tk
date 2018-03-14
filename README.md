@@ -4,14 +4,14 @@
 ### <a href="https://ijazurrahim.com" target="_blank">Ijaz Ur Rahim</a>
 ### Requirements
 
-- Python (2 or 3)
+- Python 2.7
 - Python `pip`
 - Python module `requests`
-- Python module `json`
+
 - Python module `termcolor`
 - Python module `lxml`
 - Python module `bs4`
-- Python module `os`
+
 - Python module `colorama`
 
 ### Install modules
@@ -22,6 +22,7 @@
 
 - Windows 7
 - ParrotSec
+- Android 6
  
 ### Download SiteBroker
 
